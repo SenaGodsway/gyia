@@ -3,24 +3,24 @@ import React from 'react';
 const SustainableAgriculture = () => {
   return (
     <div className="px-4 sm:px-6 lg:px-8 py-12 min-h-screen">
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-6xl">
         {/* Header Section */}
-        <section className="flex md:flex-row flex-col justify-center items-center mb-16 text-left">
+        <section className="flex md:flex-row flex-col justify-center items-center gap-8 md:gap-20 mb-16 text-left">
           <h1 className="mb-6 font-bold text-green-800 text-2xl md:text-3xl">
             Cultivating a Future of Sustainable Agriculture
           </h1>
-          <div className='max-w-4xl'>
-          <p className="mx-auto text-gray-700 text-lg leading-relaxed">
+          <div className='max-w-2xl'>
+          <p className="mx-auto text-gray-700 text-md leading-relaxed">
             Three Are Many Variations Of Passages Of Lorem Ipsum Available, But The Majority Have Suffered Alteration in Some Form, By Injected Humor, Of Randomised Words Which Don't Look. There Are Many Variations Of Passages Of Lorem Ipsum Available, But The Majority
           </p>
-          <a href="#" className="inline-block mt-8 font-semibold text-green-700 hover:text-green-900 transition-colors duration-300">
+          <a href="#" className="inline-block mt-6 font-semibold text-green-700 hover:text-green-900 transition-colors duration-300">
             Learn More →
           </a>
           </div>
         </section>
 
-        <div className="rounded-2xl w-full h-62 overflow-hidden">
-             <img src="https://images.unsplash.com/photo-1580982327559-c1202864eb05?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0" alt="" className='w-full h-full object-cover' />
+        <div className="rounded-2xl w-full h-62 md:h-72 overflow-hidden">
+             <img src="https://images.unsplash.com/photo-1594771804886-a933bb2d609b?q=80&w=1482&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className='w-full h-full object-cover' />
         </div>
          
 
