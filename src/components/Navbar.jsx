@@ -45,10 +45,10 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div
-          className="md:hidden z-40 fixed inset-0 flex flex-col justify-center items-center bg-green-900/95"
+          className="md:hidden z-40 fixed inset-0 flex flex-col justify-center items-center bg-green-900"
           onClick={toggleNavbar} // Close menu on overlay click or link click
         >
-          <nav className="flex flex-col items-center space-y-8 text-2xl">
+          <nav className="flex flex-col items-center space-y-8 text-white text-2xl">
             <a href="#" className="hover:underline">Home</a>
             <a href="#" className="hover:underline">About</a>
             <a href="#" className="hover:underline">Services</a>
