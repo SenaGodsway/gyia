@@ -2,7 +2,7 @@ import { Instagram, Twitter, Linkedin, Home, Settings, Phone, FileText } from "l
 
 export default function ContactFooter() {
   return (
-    <footer className="px-6 py-12 font-sans text-black">
+    <footer className="px-6 py-12 text-black">
       <div className="mx-auto max-w-6xl">
 
         {/* Main Content */}

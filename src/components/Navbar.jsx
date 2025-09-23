@@ -30,10 +30,10 @@ const Navbar = () => {
           <h1 className="font-bold text-2xl">GYIA</h1>
         </div>
         <nav className={`hidden md:flex space-x-4 px-12 py-3 rounded-full text-green-900 ${!hasScrolled ? 'bg-white' : ''}`}>
-          <a href="#" className="hover:underline">Home</a>
-          <a href="#" className="hover:underline">About</a>
-          <a href="#" className="hover:underline">Services</a>
-          <a href="#" className="hover:underline">Contact</a>
+          <a href="/" className="hover:underline">Home</a>
+          <a href="/about" className="hover:underline">About</a>
+          <a href="/services" className="hover:underline">Services</a>
+          <a href="/contact" className="hover:underline">Contact</a>
         </nav>
         <div className="md:hidden flex items-center pr-4">
           <button onClick={toggleNavbar} aria-label="Toggle menu">
@@ -49,10 +49,10 @@ const Navbar = () => {
           onClick={toggleNavbar} // Close menu on overlay click or link click
         >
           <nav className="flex flex-col items-center space-y-8 text-white text-2xl">
-            <a href="#" className="hover:underline">Home</a>
-            <a href="#" className="hover:underline">About</a>
-            <a href="#" className="hover:underline">Services</a>
-            <a href="#" className="hover:underline">Contact</a>
+            <a href="/" className="hover:underline">Home</a>
+            <a href="/about" className="hover:underline">About</a>
+            <a href="/services" className="hover:underline">Services</a>
+            <a href="/contact" className="hover:underline">Contact</a>
           </nav>
         </div>
       )}
