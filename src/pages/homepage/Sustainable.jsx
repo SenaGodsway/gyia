@@ -19,7 +19,7 @@ const SustainableAgriculture = () => {
           </div>
         </section>
 
-        <div className="rounded-2xl w-full h-62 md:h-72 overflow-hidden">
+        <div className="w-full h-62 md:h-92 overflow-hidden">
              <img src="https://images.unsplash.com/photo-1594771804886-a933bb2d609b?q=80&w=1482&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" className='w-full h-full object-cover' />
         </div>
          
@@ -28,21 +28,21 @@ const SustainableAgriculture = () => {
           {/* Stats Section */}
           <div className="gap-8 grid grid-cols-1 md:grid-cols-3 mt-6">
             {/* Stat 1 */}
-            <div className="bg-white shadow-md p-6 s">
+            <div className="bg-white shadow-sm p-6 s">
               <span className="font-bold text-green-700 text-5xl">95%</span>
               <h3 className="mt-2 font-semibold text-green-800 text-xl">clients Satisfaction</h3>
               <p className="mt-3 text-gray-600">There Are Many Variations Of</p>
             </div>
             
             {/* Stat 2 */}
-            <div className="bg-white shadow-md p-6">
+            <div className="bg-white shadow-sm p-6">
               <span className="font-bold text-green-700 text-5xl">100+</span>
               <h3 className="mt-2 font-semibold text-green-800 text-xl">Farmers in the Team</h3>
               <p className="mt-3 text-gray-600">There Are Many Variations Of</p>
             </div>
             
             {/* Stat 3 */}
-            <div className="bg-white shadow-md p-6">
+            <div className="bg-white shadow-sm p-6">
               <span className="font-bold text-green-700 text-5xl">400+</span>
               <h3 className="mt-2 font-semibold text-green-800 text-xl">Total Clients</h3>
               <p className="mt-3 text-gray-600">There Are Many Variations Of</p>

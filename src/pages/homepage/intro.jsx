@@ -1,4 +1,3 @@
-import React from 'react';
 
 const headers = [
   {
@@ -16,7 +15,6 @@ const headers = [
     imageUrl: 'https://images.unsplash.com/photo-1580982169321-36e1ad95adba?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     altText: 'A pile of dark, rich compost fertilizer.',
     imageBg: 'bg-amber-100',
-    inverted: true,
   },
   {
     id: 3,
@@ -30,24 +28,25 @@ const headers = [
 
 const HearderCard = ({ title, description, imageUrl, altText, imageBg, inverted = false }) => {
   const image = (
-    <div className={`flex justify-center items-center h-64 ${imageBg}`}>
+    <div className={`flex justify-center items-center w-5/12 h-64 ${imageBg}`}>
       <img src={imageUrl} alt={altText} className="w-full h-full object-cover" />
     </div>
   );
 
   const text = (
-    <div className="py-6">
+    <div className="py-6 w-4/12">
       <h3 className="mb-3 font-semibold text-green-800 text-xl">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>
   );
 
   return (
-    <div className="overflow-hidden hover:scale-105 transition-transform duration-300">
+    <div className="flex justify-between overflow-hidden hover:scale-101 transition-transform duration-300">
       {inverted ? (
-        <>{text}{image}</>
-      ) : (
         <>{image}{text}</>
+      ) : (
+       
+         <>{text}{image}</>
       )}
     </div>
   );
@@ -58,7 +57,7 @@ const Intro = () => {
     <div className="px-4 sm:px-6 lg:px-8 py-12 min-h-screen">
       <div className="mx-auto pt-14 md:pt-20 w-11/12">
         {/* Header Section */}
-        <header className="mb-16 text-center">
+        <header className="mb-16 w-7/12">
           <h1 className="mb-4 font-bold text-green-800 text-3xl md:text-4xl">
             Expert agricultural and agribusiness services
           </h1>
@@ -69,7 +68,7 @@ const Intro = () => {
         </header>
 
         <section className="mb-16">
-          <div className="gap-8 md:gap-16 grid grid-cols-1 md:grid-cols-3">
+          <div className="flex flex-col gap-8">
             {headers.map((header) => (
               <HearderCard key={header.id} {...header} />
             ))}
