@@ -2,7 +2,7 @@
 
 export default function CommunityCTA() {
   return (
-    <section className="relative bg-green-100 mx-auto my-12 p-10 rounded-[2rem] w-10/12 overflow-hidden text-white text-center">
+    <section className="relative bg-green-100 mx-auto my-12 p-10 rounded w-10/12 overflow-hidden text-white text-center">
   
       <div className="z-10 relative mx-auto max-w-2xl">
    

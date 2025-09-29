@@ -1,17 +1,12 @@
 const AboutHero = () => {
   return (
-    <div className="bg-gradient-to-br from-blue-50 to-gray-100 min-h-screen">
+    <div className="bg-white min-h-screen">
       <div className="mx-auto px-4 py-16 max-w-7xl">
         {/* Main Content Grid */}
         <div className="items-center gap-12 grid lg:grid-cols-2">
           
           {/* Left Column - Main Heading */}
           <div className="space-y-8">
-            <div className="space-y-4">
-              <h1 className="font-bold text-gray-900 text-5xl lg:text-6xl leading-tight">
-                About Us
-              </h1>
-            </div>
 
             {/* Our Story Section */}
             <div className="space-y-6">
@@ -30,7 +25,7 @@ const AboutHero = () => {
                   to every project we undertake.
                 </p>
                 <p className="text-gray-600">
-                  Your dream house is not just a building—it's a home where memories 
+                  Your dream house is not just a building — it's a home where memories 
                   are made, and we're honored to be part of that journey.
                 </p>
               </div>
@@ -39,15 +34,14 @@ const AboutHero = () => {
 
           {/* Right Column - Image/Visual */}
           <div className="relative">
-            {/* Placeholder for house image */}
-            <div className="flex justify-center items-center bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl h-96 lg:h-[500px]">
-            </div>
-            
+            <img 
+              src="https://plus.unsplash.com/premium_photo-1737676543938-1b2ec20ecd1a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+              alt="Modern house exterior" 
+              className="w-full object-cover" 
+            />
           </div>
         </div>
-
-        {/* Features Section */}
-   </div>
+      </div>
     </div>
   );
 };

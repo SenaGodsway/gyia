@@ -2,7 +2,7 @@ import { Instagram, Twitter, Linkedin, Home, Settings, Phone, FileText } from "l
 
 export default function ContactFooter() {
   return (
-    <footer className="px-6 py-12 text-black">
+    <footer className="px-6 py-12 border-t-[1px] border-t-gray-100 text-black">
       <div className="mx-auto max-w-6xl">
 
         {/* Main Content */}
@@ -21,6 +21,7 @@ export default function ContactFooter() {
             </div>
           </div>
 
+
           {/* Right Section */}
            <div className="space-y-4 text-gray-700">
   <div className="flex gap-3">
@@ -30,17 +31,17 @@ export default function ContactFooter() {
 
   <div className="flex gap-3">
     <p className="font-semibold">PHONE NO.</p>
-    <p>+44 7878 851825</p>
+    <p>+233 278 851825</p>
   </div>
 
   <div className="flex gap-3">
     <p className="font-semibold">CONTACT</p>
-    <p>contact@steelzz.com</p>
+    <p>contact@youthinagriculture.com</p>
   </div>
 
   <div className="flex gap-3">
     <p className="font-semibold">SUPPORT</p>
-    <p>help@steelzz.com</p>
+    <p>help@youthinagriculture.com</p>
   </div>
 </div>
  </div>

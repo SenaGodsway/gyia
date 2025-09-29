@@ -1,4 +1,3 @@
-import React from 'react';
 
 const headers = [
   {
@@ -42,7 +41,7 @@ const HearderCard = ({ title, description, imageUrl, altText, imageBg, inverted 
   );
 
   return (
-    <div className="flex justify-between overflow-hidden hover:scale-105 transition-transform duration-300">
+    <div className="flex justify-between overflow-hidden hover:scale-101 transition-transform duration-300">
       {inverted ? (
         <>{image}{text}</>
       ) : (
@@ -58,7 +57,7 @@ const Intro = () => {
     <div className="px-4 sm:px-6 lg:px-8 py-12 min-h-screen">
       <div className="mx-auto pt-14 md:pt-20 w-11/12">
         {/* Header Section */}
-        <header className="mb-16 text-center">
+        <header className="mb-16 w-7/12">
           <h1 className="mb-4 font-bold text-green-800 text-3xl md:text-4xl">
             Expert agricultural and agribusiness services
           </h1>
