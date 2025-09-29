@@ -1,6 +1,7 @@
 
 import ContactFooter from "../../components/Footer";
 import Navbar from "../../components/Navbar";
+import About from "./about";
 import CommunityCTA from "./Cta";
 import Hero from "./Hero";
 import Intro from "./intro";
@@ -12,6 +13,7 @@ export default function Landing() {
     <>
     <Navbar/>
       <Hero />
+      <About/>
       <Intro />
       <SustainableAgriculture/>
       <CommunityCTA/>
