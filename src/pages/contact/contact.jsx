@@ -5,10 +5,10 @@ const Contact = () => {
   return (
     <>
     <Navbar />
-    <div className="mx-auto px-4 py-8 max-w-5xl">
+    <div className="mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 max-w-5xl">
       {/* Header Section */}
       <div className="mb-12 text-center">
-        <h1 className="mb-4 font-bold text-4xl">Get in touch with us</h1>
+        <h1 className="mb-4 font-bold text-3xl md:text-4xl">Get in touch with us</h1>
         <p className="mx-auto max-w-2xl text-gray-600 text-lg">
           We're here to help! Whether you have a question about our services, 
           need assistance with your account, or want to provide feedback, 
@@ -46,7 +46,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Form */}
-        <div className="p-8 rounded-lg">
+        <div className="p-4 sm:p-8 rounded-lg">
           <h2 className="mb-6 font-semibold text-2xl">Send us a message</h2>
           <form className="space-y-6">
             <div>

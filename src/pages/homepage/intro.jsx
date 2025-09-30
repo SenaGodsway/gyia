@@ -28,20 +28,20 @@ const headers = [
 
 const HearderCard = ({ title, description, imageUrl, altText, imageBg, inverted = false }) => {
   const image = (
-    <div className={`flex justify-center items-center w-5/12 h-64 ${imageBg}`}>
+    <div className={`flex justify-center   W-full md:w-5/12 items-center h-64 ${imageBg}`}>
       <img src={imageUrl} alt={altText} className="w-full h-full object-cover" />
     </div>
   );
 
   const text = (
-    <div className="py-6 w-4/12">
+    <div className="py-6 md:w-4/12 W-full">
       <h3 className="mb-3 font-semibold text-green-800 text-xl">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>
   );
 
   return (
-    <div className="flex justify-between overflow-hidden hover:scale-101 transition-transform duration-300">
+    <div className="flex md:flex-row flex-col justify-between overflow-hidden hover:scale-101 transition-transform duration-300">
       {inverted ? (
         <>{image}{text}</>
       ) : (
@@ -57,7 +57,7 @@ const Intro = () => {
     <div className="px-4 sm:px-6 lg:px-8 py-12 min-h-screen">
       <div className="mx-auto pt-14 md:pt-20 w-11/12">
         {/* Header Section */}
-        <header className="mb-16 w-7/12">
+        <header className="mb-16 w-full md:w-7/12">
           <h1 className="mb-4 font-bold text-green-800 text-3xl md:text-4xl">
             Expert agricultural and agribusiness services
           </h1>
