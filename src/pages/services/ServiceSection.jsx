@@ -9,11 +9,6 @@ const ServiceSection = () => {
       description: "Just moved into a building with an existing system? Easily transfer ownership and management."
     },
     {
-      title: "Solargraf Software",
-      description: "Create precise solar proposals fast with Solargraf 3.0 modeling and spotting tools.",
-      button: "Book your demo today!"
-    },
-    {
       title: "3 Year Monitoring Service Extension",
       description: "Extend Enphase monitoring updates, system status, energy data and remote services with your AT&T connectivity."
     },
@@ -38,15 +33,10 @@ const ServiceSection = () => {
         {services.map((service, index) => (
           <div 
             key={index} 
-            className="bg-white shadow-sm hover:shadow-md p-6 border border-gray-200 rounded-lg transition-shadow"
+            className="bg-white p-6 border border-gray-200 rounded-lg transition-shadow"
           >
             <h3 className="mb-3 font-semibold text-gray-900 text-xl">{service.title}</h3>
             <p className="mb-4 text-gray-600 leading-relaxed">{service.description}</p>
-            {service.button && (
-              <button className="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg font-medium text-white text-sm transition-colors">
-                {service.button}
-              </button>
-            )}
           </div>
         ))}
       </div>

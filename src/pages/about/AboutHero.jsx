@@ -1,6 +1,6 @@
 const AboutHero = () => {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white pt-12 min-h-screen">
       <div className="mx-auto px-4 py-16 max-w-7xl">
         {/* Main Content Grid */}
         <div className="items-center gap-12 grid lg:grid-cols-2">

@@ -1,9 +1,20 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { Facebook, Instagram, Menu, X, Twitter } from 'lucide-react';
+import MobileMenu from './MobileMenu';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    // Cleanup function to reset overflow when component unmounts
+    return () => (document.body.style.overflow = 'unset');
+  }, [isOpen]);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -12,14 +23,17 @@ const Navbar = () => {
   const navLinkClasses = ({ isActive }) =>
     isActive ? "text-green-700 font-semibold" : "";
 
+  const handleMobileLinkClick = () => {
+    setIsOpen(false);
+  };
 
   return (
     <>
       <header
-        className="flex justify-between items-center bg-white mx-auto px-6 sm:px-12 py-3 border-b border-b-indigo-50 w-full"
+        className="z-30 fixed flex justify-between items-center bg-white mx-auto px-6 sm:px-12 py-3 border-b border-b-indigo-50 w-full"
       >
         <div className="px-2 py-2">
-          <Link to="/" className="font-bold">Youth In Agric</Link>
+          <Link to="/" className="z-50 font-bold">Youth In Agric</Link>
         </div>
         <div className='flex justify-between items-center gap-24'>
         <nav className="hidden md:flex gap-6 space-x-4 px-6 rounded-full">
@@ -42,7 +56,7 @@ const Navbar = () => {
         </div>
       
         <div className="md:hidden flex items-center pr-4">
-          <button onClick={toggleNavbar} aria-label="Toggle menu">
+          <button onClick={toggleNavbar} aria-label="Toggle menu" className='z-50'>
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -51,19 +65,7 @@ const Navbar = () => {
       </header>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div
-          className="md:hidden z-40 fixed inset-0 flex flex-col justify-center items-center bg-green-900"
-          onClick={toggleNavbar} // Close menu on overlay click
-        >
-          <nav className="flex flex-col items-center space-y-8 text-white text-2xl">
-            <NavLink to="/" className={({isActive}) => isActive ? "underline" : ""}>Home</NavLink>
-            <NavLink to="/about" className={({isActive}) => isActive ? "underline" : ""}>About</NavLink>
-            <NavLink to="/services" className={({isActive}) => isActive ? "underline" : ""}>Services</NavLink>
-            <NavLink to="/contact" className={({isActive}) => isActive ? "underline" : ""}>Contact</NavLink>
-          </nav>
-        </div>
-      )}
+      <MobileMenu isOpen={isOpen} onLinkClick={handleMobileLinkClick} />
     </>
   );
 };

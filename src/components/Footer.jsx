@@ -6,11 +6,11 @@ export default function ContactFooter() {
       <div className="mx-auto max-w-6xl">
 
         {/* Main Content */}
-        <div className="flex md:flex-row flex-col justify-between items-center gap-6">
+        <div className="flex md:flex-row flex-col justify-between items-center gap-24 md:gap-6">
           {/* Left Section */}
           <div>
-            <h2 className="mb-4 font-extrabold text-5xl">GET IN TOUCH.</h2>
-            <p className="mb-6 text-gray-800 text-sm">
+            <h2 className="mb-4 font-extrabold text-4xl">GET IN TOUCH.</h2>
+            <p className="mb-4 w-full md:w-8/12 text-gray-800 text-md">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cumque ab eveniet vel.
             </p>
 
@@ -23,9 +23,9 @@ export default function ContactFooter() {
 
 
           {/* Right Section */}
-           <div className="space-y-4 text-gray-700">
+    <div className="space-y-4 mb-0 md:mb-6 text-gray-700">
   <div className="flex gap-3">
-    <p className="font-semibold">BASED IN</p>
+    <p className="font-semibold">LOCATION</p>
     <p>Westland, Porturphy Street <br /> Accra, Ghana</p>
   </div>
 
@@ -46,12 +46,7 @@ export default function ContactFooter() {
 </div>
  </div>
 
-          <div className="flex gap-4 mt-12">
-              <a href="#" className="flex items-center gap-2 hover:text-gray-700"> Home</a>
-              <a href="#" className="flex items-center gap-2 hover:text-gray-700">About</a>
-              <a href="#" className="flex items-center gap-2 hover:text-gray-700"> Services</a>
-              <a href="#" className="flex items-center gap-2 hover:text-gray-700"> Contact</a>
-            </div>
+      
 
         {/* Bottom */}
         <div className="flex md:flex-row flex-col justify-between items-center mt-12 pt-6 border-t border-black text-sm">
